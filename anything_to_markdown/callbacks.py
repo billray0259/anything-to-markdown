@@ -36,7 +36,7 @@ def register_callbacks(app):
     )
     def update_upload_component(contents, filename):
         if contents is None or filename is None:
-            return no_update, 'Drag and Drop or Select Files', True
+            return no_update, True
         
         content_type, content_string = contents.split(',')
         decoded = base64.b64decode(content_string)
