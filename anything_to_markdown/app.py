@@ -3,8 +3,7 @@
 import dash
 import dash_bootstrap_components as dbc
 from flask import Flask
-
-import package_name as proj
+import anything_to_markdown as proj
 
 def create_dash_app(server: Flask, url_base_pathname: str = "/"):
     """
@@ -14,7 +13,7 @@ def create_dash_app(server: Flask, url_base_pathname: str = "/"):
         __name__,
         server=server,
         url_base_pathname=url_base_pathname,
-        external_stylesheets=[dbc.themes.BOOTSTRAP],
+        external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP],
     )
 
     # Set the layout

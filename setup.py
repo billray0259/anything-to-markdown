@@ -5,7 +5,7 @@ def parse_requirements(filename):
         return file.read().splitlines()
 
 setup(
-    name='package-name',
+    name='anything-to-markdown',
     version='0.1.0',
     packages=find_packages(),  # This should detect 'census_dashboard'
     include_package_data=True,

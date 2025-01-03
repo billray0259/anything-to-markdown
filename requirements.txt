@@ -1,3 +1,8 @@
 flask
 dash
 dash-bootstrap-components
+openai
+markitdown
+pdf2image
+pypandoc
+python-magic
